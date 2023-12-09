@@ -20,7 +20,7 @@ Follow these steps to run the Go server on your machine:
     cd go_project
     ```
 
-2. Build the Docker image:
+2. Build the Docker image: (Make sure your Docker Desktop (Docker Nodemon) is Running in Background)
 
     ```bash
     docker build -t go-server .
