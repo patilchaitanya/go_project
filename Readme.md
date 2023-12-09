@@ -20,22 +20,6 @@ Follow these steps to run the Go server on your machine:
     cd go_project
     ```
 
-2. Build the Docker image: (Make sure your Docker Desktop (Docker Nodemon) is Running in Background)
-
-    ```bash
-    docker build -t go-server .
-    ```
-## Getting Started
-
-Follow these steps to run the Go server on your machine:
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/patilchaitanya/go_project.git
-    cd go_project
-    ```
-
 2. Run the Go server locally:
 
     ```bash
@@ -62,13 +46,19 @@ Follow these steps to run the Go server on your machine:
 
     Replace the `$body` content with your desired input arrays.
 
-4. Run the Docker container:
+4. Build the Docker image: (Make sure your Docker Desktop (Docker Nodemon) is Running in Background)
+
+    ```bash
+    docker build -t go-server .
+    ```
+
+5. Run the Docker container:
 
     ```bash
     docker run -p 8000:8000 go-server
     ```
 
-5. The server should now be running. Access the following endpoints:
+6. The server should now be running. Access the following endpoints:
 
     - [http://localhost:8000/process-single](http://localhost:8000/process-single) (Sequential Processing)
     - [http://localhost:8000/process-concurrent](http://localhost:8000/process-concurrent)
